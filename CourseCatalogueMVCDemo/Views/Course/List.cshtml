@@ -1,0 +1,19 @@
+﻿@*@model IEnumerable<CourseCatalogueMVCDemo.Models.Course>*@
+@*@model CourseCatalogueMVCDemo.ViewModels.CourseListVM*@
+@model CourseListVM
+
+    <h1>@Model.SeletedCategoryName</h1>
+<hr />
+
+    @foreach (var course in Model.Courses)
+    {
+        <div class="card" style="width:18rem;">
+            <img class="card-img-top" src="@course.ImageUrl" alt="@course.Title">
+            <div class="card-body">
+                <h5 class="card-title">@course.Title</h5>
+                <h6 class="card-subtitle">@course.Category.Name</h6>
+                <p class="card-text">@course.Description</p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    }

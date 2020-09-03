@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/lib/bootstrap/CSS/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/CSS/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/CSS/bootstrap.css" rel="stylesheet" />
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link href="~/CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><h1>AP's Course Catalogue</h1></div>
+            <div class="col-md-9">@RenderBody()</div>
+        </div>
+    </div>
+</body>
+</html>
